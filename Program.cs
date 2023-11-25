@@ -2,9 +2,9 @@ using System;
 
 public class Program{
     public static void Main(){
-        ITEmployee linuxGuy = new ITEployee('Rico', 'Marko', 'LinuxEmployee');
-        linuxGuy.AddTool(new newNotebook());
+        ITEmployee linuxGuy = new ITEmployee("Rico", "Marko", "LinuxEmployee");
+        linuxGuy.AddTool(new Notebook());
         linuxGuy.AddTool(new Phone());
-        linuxGuy,Work();
+        linuxGuy.Work();
     }
 }
