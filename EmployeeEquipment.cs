@@ -15,11 +15,13 @@ public class Equipment{
 }
 
 public abstract class Employee{
+    public stiring EmployeeID { get; } 
     public string FirstName{ get; }
     public string LastName{ get; }
     public string JobDescription{ get; }
 
-    protected Employee(string firstName, string lastName, string jobDescription){
+    protected Employee(string employeeID, string firstName, string lastName, string jobDescription){
+        EmployeeID = employeeID;
         FirstName = firstName;
         LastName = lastName; 
         JobDescription = jobDescription;
@@ -31,7 +33,7 @@ public abstract class Employee{
 
     public class ITEmployee : Employee{ 
          private readonly List<ITool>Tools; 
-         public ITEmployee(string firstName, string lastName, string jobDescription) : base( firstName, lastName, jobDescription){
+         public ITEmployee(string employeeID, string firstName, string lastName, string jobDescription) : base(employeeID, firstName, lastName, jobDescription){
             Tools = new List<ITool>();
          }
         public void AddTool(ITool tool){
