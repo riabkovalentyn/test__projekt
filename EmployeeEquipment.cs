@@ -1,5 +1,5 @@
 using System;
-using System.Collection.Generic;
+using System.Collections.Generic;
 
 public interface ITool{
     void Use();
@@ -20,9 +20,9 @@ public abstract class Employee{
     public string JobDescription{ get; }
 
     protected Employee(string firstName, string lastName, string jobDescription){
-        firstName = firstName;
+        FirstName = firstName;
         LastName = lastName; 
-        jobDescription = jobDescription;
+        JobDescription = jobDescription;
     }
 
     public abstract void Work( );
@@ -38,7 +38,7 @@ public abstract class Employee{
             Tools.Add(tool);
         }
         public override void Work(){
-            Console.WriteLine('Work in IT Company...');
+            Console.WriteLine("Work in IT Company...");
             foreach (var tool in Tools){
                 tool.Use();
             }
@@ -47,11 +47,11 @@ public abstract class Employee{
     }
         public class Notebook : ITool{
             public void Use(){
-                Console,WriteLine('Using PC...');
+                Console.WriteLine("Using PC...");
             }
         }
         public class Phone : ITool{
             public void Use(){
-                Console.WriteLine('Using Phone');
+                Console.WriteLine("Using Phone");
             }
         }
