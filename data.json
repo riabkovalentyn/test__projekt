@@ -1,0 +1,24 @@
+{
+    "employees": [
+        {
+            "firstName" : "Rico",
+            "lastName" : "Marco",
+            "jobDescription" : "LinuxEmployee"
+        },
+        {
+            "firstName" : "Kira",
+            "lastName" : "Miyada",
+            "jobDescription" : "CEmployee"
+        }
+    ],
+    "equipment" : [
+        {
+            "ID" : 1,
+            "Description" : "PC"
+        },
+        {
+            "ID" : 2,
+            "Description" : "Phone"
+        }
+    ]
+}
